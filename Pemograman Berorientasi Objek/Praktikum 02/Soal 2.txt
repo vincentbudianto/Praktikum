@@ -1,0 +1,21 @@
+Diberikan header file ADT Pecahan yang dapat anda download di sini.
+
+Kodelah body Pecahan.cpp dan submit Pecahan.cpp saja
+
+Program anda akan dinilai otomatis dengan Pecahan.h dan driver yang telah disediakan oleh sistem
+
+Untuk melakukan normalisasi pecahan, anda dapat menggunakan fungsi GCD sebagai berikut
+
+int GCD (int nx, int ny) 
+{
+  int n1, n2;
+  n1=nx; n2=ny;
+  while(n1 != n2)
+  {
+    if(n1 > n2)
+      n1 -= n2;
+    else
+      n2 -= n1;
+  }
+  return n1;
+}
