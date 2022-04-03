@@ -1,0 +1,9 @@
+Sebuah TokoFoto menjual Warna. Karena bergerak dalam bidang foto, toko ini menjual warna yang memiliki tiga warna dasar cahaya, yaitu Red Green dan Blue. Pemilik toko tersebut ingin meminta anda untuk membuat kelas terkait warna dengan menggunakan OOP. Kelas Warna mendeskripsikan tentang warna, dan kelas ArrayWarna mendeskripsikan Array of Warna dan Data.
+
+Implementasikan method dari kelas generik Warna (Warna.h) dan ArrayWarna (ArrayWarna.h). 
+Anda diperbolehkan untuk menggunakan fungsi abs pada library <math.h>. Berikut adalah contoh penggunaannya.
+
+#include <math.h>
+double result = abs(-1 - 1); //result bernilai 2
+Setelah mengimplementasi, kumpulkan dua file tersebut, warna.h, array_warna.h dalam bentuk zip
+Kumpulkan warnawarna.zip

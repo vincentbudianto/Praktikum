@@ -1,0 +1,37 @@
+Mr. Joe bekerja sebagai seorang sekretaris yang akan mencatat memo-memo yang ditujukan untuk orang di himpunannya dan menyimpan memo tersebut. Dalam menulis memo, Mr. Joe memerlukan kertas, tinta, dan energi yang sudah sangat terkuras karena banyaknya tubes yang harus dikerjakannya. Kertas dan tinta dapat habis dan Mr. Joe tingal meminta lagi pada bendahara. Energi juga dapat dipulihkan dengan istirahat (tetapi tetap dengan jumlah yang sedikit karena tubes selalu menghantui).
+
+Karena energi yang sedikit, bisa jadi Mr. Joe melakukan kesalahan dalam tugasnya, misalnya Mr. Joe lupa untuk mengisi tinta yang sudah habis, atau memonya terlalu panjang. Untungnya, Mr. Joe memiliki penolong yang bernama Exception yang dapat menangani kesalahan-kesalahan tersebut. Dengan bantuan Exception, Mr. Joe dapat menghindari kesalahan-kesalahan fatal dalam melaksanakan tugasnya.
+
+Cerita di atas tidak terlalu berhubungan dengan soal ini, jadi tidak perlu Anda baca.
+
+Berikut adalah file header yang diberikan:
+
+exception.h
+memo.h
+sekretaris.h
+Anda perlu membuat dan mengumpulkan memo.cpp dan sekretaris.cpp sesuai spesifikasi yang diberikan, di mana kelas sekretaris merupakan sekretaris seperti Mr. Joe dan memo merupakan kertas memo yang dapat ditulisi pesan.
+
+Contoh output:
+
+Jika kertas habis:
+"Kertas habis, segera isi kertas" (tanpa kutip)
+"Kertas habis" adalah isi pesan dari exception
+Jika berhasil membuat memo untuk Joe:
+"Memo [1] untuk Joe berhasil dibuat" (tanpa kutip)
+Setelah membuat memo untuk Joe dan untuk Ban, isi status:
+"
+Status
+  Energi : 8
+  Tinta : 90
+  Kertas : 3
+  Memo : 2
+    Memo [1]
+      Pesan : Hello
+      Untuk : Joe
+    Memo [2]
+      Pesan : World
+      Untuk : Ban
+" (tanpa kutip)
+Catatan:
+
+Gunakan std::string.length() untuk mendapatkan panjang string
