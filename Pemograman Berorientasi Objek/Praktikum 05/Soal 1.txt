@@ -1,0 +1,11 @@
+Diberikan kerangka kelas sebagai berikut.
+- Shape.hpp
+- Circle.hpp
+- Triangle.hpp
+- ColoredTriangle.hpp
+
+Tugas Anda: melengkapi dan mengimplementasikan kerangka kelas yang diberikan, Anda harus menambahkan virtual, pure virtual yang sesuai. 
+
+Kumpulkan Shape.hpp, Shape.cpp, Circle.hpp, Circle.cpp, Triangle.hpp, Triangle.cpp, ColoredTriangle.hpp, dan ColoredTriangle.cpp dalam sebuah zip bernama shape.zip.
+
+Catatan: Gunakan library <cmath> untuk menggunakan fungsi sqrt(x).

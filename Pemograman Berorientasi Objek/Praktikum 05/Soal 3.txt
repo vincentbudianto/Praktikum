@@ -1,0 +1,78 @@
+Terdapat Abstract Base Class (ABC) bernama Unggas. Class tersebut memiliki dua derived class yaitu Ayam dan Bebek. Class Ayam memiliki sebuah derived class AyamJago.
+
+Untuk class Unggas:
+
+Memiliki satu attribute bertipe array of char yang bersifat protected yaitu nama.
+Memiliki satu constructor berparameter array of char yang merupakan nama unggas. Parameter constructor tidak menggunakan reference. Constructor menghasilkan keluaran mengenai kelahiran unggas tersebut.
+Memiliki satu cctor, untuk menghasilkan unggas dengan nama yang sama.
+Memiliki operator= untuk mengganti nama unggas dengan nama unggas yang menjadi parameter.
+Memiliki dtor virtual yang mengeluarkan keluaran mengenai kematian unggas tersebut dan mendealokasi memori dari atribut nama.
+Memiliki fungsi pure virtual bernama bersuara yang tidak menerima parameter
+Untuk class Ayam, Bebek, AyamJago:
+
+Memiliki satu constructor berparameter array of char yang merupakan nama ayam/ bebek/ ayam jago. Parameter constructor tidak menggunakan reference. Constructor menghasilkan keluaran mengenai kelahiran ayam/ bebek/ ayam jago tersebut.
+Memiliki dtor yang menghasilkan keluaran mengenai kematian ayam/ bebek/ ayam jago tersebut.
+Anda diharapkan untuk menuliskan keluaran dari main program yang akan diberikan.
+
+Sebagai contoh, jika anda diberikan main program sebagai berikut:
+ int main() {
+  Ayam ayam("Parjo");
+  ayam.bersuara();
+  Bebek bebek("Donal");
+  bebek.bersuara();
+  AyamJago ayamJago("Joni");
+  ayamJago.bersuara();
+  Ayam ayamBaru("a", 1); // akan mengeluarkan error
+  ayamBaru.bersuara(); // mengeluarkan error karena ayamBaru error juga
+  return 0;
+}
+Anda harus memberikan jawaban sebagai berikut:
+Unggas bernama Parjo menetas! :D    
+Ayam bernama Parjo menetas! :D
+Parjo: "Tok petok petok!"
+Unggas bernama Donal menetas! :D
+Bebek bernama Donal menetas! :D
+Donal: "Kwek kwek!"
+Unggas bernama Joni menetas! :D
+Ayam bernama Joni menetas! :D
+AyamJago bernama Joni menetas! :D
+Joni: "Kukuruyuk!!"
+error
+error
+AyamJago bernama Joni mati T.T
+Ayam bernama Joni mati T.T
+Unggas bernama Joni mati T.T
+Bebek bernama Donal mati T.T
+Unggas bernama Donal mati T.T
+Ayam bernama Parjo mati T.T
+Unggas bernama Parjo mati T.T
+Tuliskan jawaban untuk main program berikut.
+
+int main() {
+  Unggas* kumpulan_unggas[3];
+  
+  Ayam ayam("Parjo");
+  Bebek bebek("Donal");
+  AyamJago ayamJago("Joni");
+  
+  kumpulan_unggas[0] = &ayam;
+  kumpulan_unggas[1] = &bebek;
+  kumpulan_unggas[2] = &ayamJago;
+
+  Unggas unggasBaru("Tweety");
+
+  Ayam* ayamBaru = new Ayam(ayamJago);
+  ayamBaru->bersuara();
+
+  AyamJago* ayamJagoBaru = new AyamJago(ayam);
+  ayamJagoBaru->bersuara();
+
+  delete ayamBaru;
+
+  for (int i = 2; i >= 0; --i) {
+    kumpulan_unggas[i]->bersuara();
+  }
+
+  return 0;
+}
+Tuliskan jawaban anda di dalam file 1.ans (bukan 1.ans.txt). Kumpulkan 1.zip yang berisi 1.ans!

@@ -1,0 +1,35 @@
+Buatlah sebuah file cpp yang berisi implementasi fungsi generik. Berikut merupakan spesifikasi dari fungsi generik pada praktikum ini.
+
+Buatlah fungsi func(param1, param2) yang dapat menerima dua parameter input bertipe apapun dengan ketentuan: param1 dan param2 bertipe sama, dan param1 dan param2 boleh bertipe beda. 
+Jika param1 dan param2 bertipe sama, fungsi ini akan menghasilkan keluaran "Masukan Anda: <param1> dan <param2>, memiliki tipe yang sama" diakhiri dengan newline. 
+Jika param1 dan param2 mungkin bertipe beda, fungsi ini akan menghasilkan keluaran "Masukan Anda: <param1> dan <param2>, mungkin memiliki tipe yang berbeda" diakhiri dengan newline.
+Terdapat kasus khusus untuk poin 1, yaitu ketika param1 bertipe char dan param2 bertipe int, fungsi ini akan mengeluarkan nilai param1 sebanyak nilai param2.
+Contoh:
+func<char,int>('a', 2)
+akan menghasilkan keluaran:
+a
+a 
+HINT:
+
+Berikut merupakan fitur template tambahan pada c++ yang dapat digunakan pada praktikum ini.
+
+Template Specialization
+
+Digunakan untuk membuat perlakuan khusus terhadap suatu class atau tipe tertentu.
+
+// Menghasilkan t1 jika t1>=t2
+template<class T>
+T greaterOrEqual(T t1, T t2) {
+  return t1 >= t2 ? t1 : t2;
+}
+
+// Template specialization untuk tipe string
+// Jika parameter template bertipe string maka
+// fungsi greaterOrEqual dibawah yang akan dipanggil
+// Menghasilkan t1 jika jumlah huruf t1 >= jumlah huruf t2
+template<>
+string greaterOrEqual<string>(string t1, string t2) {
+  return t1.size() >= t2.size() ? t1 : t2;
+}
+
+Kumpulkan satu file bernama Generik.cpp.
