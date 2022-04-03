@@ -1,0 +1,20 @@
+Hari ini adalah hari Valentine. Banyak muda mudi pergi bersama untuk menikmati kebersamaan. Namun berbeda dengan Dilon. Dengan perginya Milia sejak 1990, ia merasa sendiri di Hari Valentine ini. Akhirnya Dilon memutuskan untuk masuk ke kamarnya dan mendengarkan Spottypie. 
+
+Ilustrasi logo Spottypie
+
+Spottypie adalah aplikasi yang dapat digunakan untuk memainkan musik secara online. Pengguna aplikasi Spottypie terdiri dari tiga jenis, yaitu pengguna biasa, pengguna premium, dan artis/musisi. Pengguna biasa hanya dapat mendengarkan musik dan menyimpannya dalam daftar musik favorit. Pengguna premium dapat mengunduh musik sehingga dapat dijalankan secara offline. Pengguna artis dapat mengunggah musik.
+
+Karena Dilon sangat tertarik dengan Spottypie, Dilon ingin membuat aplikasi tandingan dari Spottypie. Sebagai mahasiswa yang mengambil mata kuliah IF2210 Pemrograman berorientasi objek, Dilon meminta anda untuk membuat tandingan dari Spottypie.
+ 
+Anda diminta oleh Dilon untuk membuat "aplikasi" kecil sejenis Spottypie. Yang perlu anda buat adalah implementasi kelas dalam .cpp saja. Header dari masing-masing kelas dapat diunduh melalui tautan berikut ini.
+- User.h
+- PremiumUser.h
+- ArtistUser.h 
+
+Catatan:
+1. Gunakan library <cstring> untuk menggunakan fungsi-fungsi pengolah string:
+2. strcmp(str1, str2) untuk membandingkan str1 dan str2, jika hasil 0 berarti kedua string sama.
+3. strcpy(str1, str2) untuk menyalin str2 ke str1
+4. strlen(str) untuk memeriksa panjang sebuah string
+
+Upload sebuah zip berisi file-file User.cpp, PremiumUser.cpp, dan ArtistUser.cpp.

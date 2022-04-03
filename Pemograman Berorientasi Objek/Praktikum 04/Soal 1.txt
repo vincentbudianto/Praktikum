@@ -1,0 +1,66 @@
+Anda diminta untuk membuat definisi dan implementasi dari dua buah kelas yaitu kelas Artikel dan kelas Jurnal.
+
+Kelas Artikel
+
+1. Artikel memiliki tiga buah atribut private yaitu judul bertipe pointer of char, 
+   penulis bertipe pointer of char, dan  tahun bertipe integer.
+2. Setiap array of char pada kelas artikel diinisialisasi dengan karakter '\0' sebanyak DEFSIZE.
+   Definisikanlah DEFSIZE agar bernilai 256.
+3. Nilai tahun default adalah 0.
+4. Kelas artikel memiliki dua constructor, copy constructor, destructor, operator=,
+   getter dan setter tiap atribut, serta fungsi print. Perhatikan catatan tambahan di akhir
+   halaman ini.
+   a. Constructor pertama tidak menerima parameter apapun. Constructor kedua menerima tiga
+      buah parameter berturut-turut judul (pointer of char), penulis (pointer of char), dan
+      tahun (integer).
+   b. Fungsi print tidak menerima parameter dan mencetak ke layar dengan format :
+      <penulis>. <tahun>. "<judul>". diakhiri newline.
+      !! Perhatikan penggunaan titik dan tanda kutip. Contoh: 
+
+      Bjarne Stroustrup. 2018. "A Tour of C++ (second edition)".
+
+Kelas Jurnal
+1. Jurnal memiliki dua atribut private yaitu sebuah array of Artikel dengan nama data dan
+   sebuah integer size untuk menyimpan ukuran efektif dari array tersebut.
+2. data diinisailiasi dengan Artikel kosong sebanyak DEFSIZE
+3. Nilai size default adalah 0.
+4. Kelas jurnal memiliki dua constructor, copy constructor, destructor, operator=,
+   getter dan setter khusus, serta fungsi print, add, insert, dan findByTahun. Perhatikan
+   catatan tambahan di akhir halaman ini.
+   a. Constructor pertama tidak menerima parameter apapun data akan diisi dengan artikel kosong
+      sebanyak DEFSIZE. Constructor kedua menerima dua buah parameter berturut-turut data (pointer
+      of Artikel) dan size (integer).
+   b. Setter untuk atribut data menerima dua buah parameter, idx (integer) dan artikel (Artikel),
+      untuk mengubah isi data ke-idx menjadi artikel tersebut sehingga tidak mengubah ukuran array. 
+   c. Getter untuk atribut data menerima sebuah parameter idx (integer) dan mengembalikan Artikel
+      data ke-idx.
+   d. Getter dan setter untuk atribut size seperti biasa.
+   e. findByTahun menerima sebuah parameter tahun (integer) dan mengembalikan indeks pertama
+      ditemukannya artikel beratribut tahun tersebut. Jika tidak ditemukan, kembalikan integer
+      terkecil yang lebih besar dari indeks valid terakhir.
+   f. Fungsi add menerima sebuah parameter artikel (Artikel). Fungsi ini menambahkan artikel di
+      ujung belakang array, ukuran array bertambah satu.
+   g. Fungsi insert menerima dua buah parameter berturut-turut yaitu idx (integer) dan artikel 
+      (Artikel). Fungsi ini menyisipkan artikel agar menjadi data ke-idx dan menggeser artikel lain
+      ke belakang satu langkah, ukuran array bertambah satu.
+   h. Fungsi print tidak menerima parameter dan mencetak ke layar dengan format : 
+
+      Konten <idx+1>
+      <penulis>. <tahun>. "<judul>".
+
+      !! Perhatikan penggunaan newline, titik dan tanda kutip. Contoh: 
+
+      Konten 1
+      Bjarne Stroustrup. 2018. "A Tour of C++ (second edition)".
+      Konten 2
+      Bjarne Stroustrup. 2014. "Five popular myths about C++".
+
+Catatan :
+1. Contoh penamaan getter : getNamaAtribut.
+2. Contoh penamaan setter : setNamaAtribut.
+3. Implementasikan copy constructor agar tidak melakukan bitwise copy.
+4. Implementasikan destructor untuk dealokasi memory dari seluruh atribut bertipe pointer.
+5. Gunakan library <cstring> untuk menggunakan fungsi strcpy(str1, str2) untuk menyalin str2 ke str1
+   char * strcpy ( char * destination, const char * source );
+
+Kumpulkan Artikel.hpp, Artikel.cpp, Jurnal.hpp, dan Jurnal.cpp dalam sebuah zip dengan format nama :  answer.zip
