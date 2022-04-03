@@ -1,0 +1,16 @@
+Diberikan sebuah ADT Matriks berukuran NxM yang setiap elemennya adalah integer. Header dapat di-download di sini
+
+Buatlah implementasi dari header file tersebut, kemudian submit Matriks.cpp yang akan dinilai dengan driver yang disediakan oleh sistem.
+
+Contoh : 
+Nama Matriks		Isi Matriks		M1+M2		M1*M2
+M1			2 1 0
+			3 1 1 
+			1 3 4
+						3 2 0		2 1 0
+						6 1 1		9 0 1
+M2			1 1			1 3 4		1 3 4
+			3 0
+
+
+Catatan: Saat kompilasi, gunakan flag --std=c++11
